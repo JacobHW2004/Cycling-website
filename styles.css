@@ -1,0 +1,126 @@
+/* Background Colours */
+header, footer {background-color:#edd9c0}
+nav {background-color:#7d4627}
+main {background-color:#a8b6bf}
+div, section {background-color: #c9d8c5}
+
+/* Text Properties */
+h1 {font-size:200%;color:#7d4627}
+h2 {font-size:100%;color:black}
+
+
+
+/* Margins */
+nav, main, footer {margin-top:1%}
+section {margin:1%}
+body {margin:auto}
+p {margin-bottom:1%}
+h2, nav {margin-bottom:1%}
+
+
+/* Padding */
+header, section, footer, main, nav {padding:0.3%}
+ 
+
+
+/* Positioning (Float, Display and Clear) */
+h1 {float:right}
+#raceDescriptions {float:left;width:47%; height: 81%;}
+#newsletterForm  {float:right;width:47%; height: 81%;}
+header, nav, main, footer {display:block;clear:both}
+
+
+/* Element Sizes */
+body {width:70%}
+.imageBanner {width:40%;height:100%}
+header {height:10%}
+footer {height:60%}
+
+.mountainImages {width:30%;height:30%;margin-right:2%; }
+.buttonTrack {width:145px;height:35px;margin:10px}
+nav {height:50px}
+
+/* Navigation List Properties */
+nav ul {list-style-type:none}
+nav ul li {float:left;width:10%;text-align:center}
+nav ul li a {display:block;padding:10%;color:black}
+nav ul li a:hover {background-color:#edd9c0;color:#7d4627}
+
+.dropdown{
+    display: none;
+}
+
+.dropdown{
+    float:left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn{
+    font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #7d4627;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn{
+    background-color:#edd9c0
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #7d4627;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #edd9c0;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+@media (max-width: 625px){
+    .imageBanner {display: none;}
+}
+
+@media (max-width: 900px){
+    nav ul{display: none;}
+    .dropdown{display: inline-block;}
+    #newsletterform{clear: both;}
+}
+
+html{
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif, Arial;
+}
+
+#roadSide, #trialSide{
+  height: 85%;
+  width: 45%;
+  
+}
+
+#roadParagraph{font-size: 1.2vw}
+#trialParagraph{font-size: 1.1vw}
+
+#downHill, #crossCountry{font-size: 0.8vw}
